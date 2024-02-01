@@ -1,0 +1,92 @@
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+}
+
+.header__navigation .navigation {
+    display: flex;
+    justify-content: space-around;
+    /* centraliza os elementos e coloca espaço em volta dos elementos */
+    align-items: center;
+}
+
+.header__navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+    /* o rem é unidade de medida que diferente do pixel px ele não é estático (fixo) é uma unidade relativa */
+}
+
+.arrow-left,
+.arrow-right {
+    /* aplicando o estilo para os 2 buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border: none;
+    cursor: pointer;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+}
+
+.header_search {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header_search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header_search input {
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0px 12px;
+    color: var(--bg-white);
+    outline: none;
+    text-overflow: ellipsis;
+    /* ele serve para quando temos um texto grande ele aplica os 3 pontinhos  */
+    overflow: hidden;
+    /* trabalha junto com o text-overflow, é quem coloca os 3 pontinhos */
+    white-space: nowrap;
+    /* ele deixa o texto em uma unica linha */
+    outline: none;
+}
+
+.header__login .subscribe {
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.header__login .login {
+    width: 100px;
+    height: 48px;
+    color: var(--text-base-dark);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+}
